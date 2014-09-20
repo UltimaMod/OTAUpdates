@@ -68,7 +68,7 @@ public class UpdateReceiver extends BroadcastReceiver implements Constants{
 		.setContentIntent(intent)
 		.setAutoCancel(true)
 		.setPriority(NotificationCompat.PRIORITY_HIGH)
-		.setDefaults(NotificationCompat.DEFAULT_ALL);
+		.setDefaults(-1);
 		mNotifyManager.notify(0, mBuilder.build());
 	}
 	
